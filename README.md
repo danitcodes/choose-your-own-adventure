@@ -80,7 +80,7 @@ onclick to delete a keg (inventory) {stretch} {_done_}
 
 ## Component Diagram
 
-![Tap Room File Tree](https://i.postimg.cc/BnXjV00P/Tap-Room-File-Tree.png)
+![Tap Room File Tree](TODO)
 
 </div>
 
@@ -100,9 +100,9 @@ onclick to delete a keg (inventory) {stretch} {_done_}
 
 ---
 
-## Wireframe
+## Story Board Flow Charts
 
-![Tap Room Wireframe](https://i.postimg.cc/V6Jn98HR/Tap-Room-Wire-Frame.png)
+![Story Board](src/components/img/choose-your-own-adventure-Storyline.png)
 
 </div>
 
