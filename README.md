@@ -55,26 +55,23 @@ _No known bugs at this time._
 
 This is an application for a tap room to track their keg inventory using React/Redux framework.
 
-### Objectives
+### MVP Objectives
 
-READ
-view list of all kegs with (name, brand, price & alcoholContent) {_done_}
-onclick to toggle form {_done_}
+- React.js front-end with a focus on animations & parallax scrolling
+- Hard-code back-end responses (prompts/choices)
+- Stretch goal: refactoring hard-coded responses, etc. with C# as back-end
+- ** Make sure that we systemize how hard coding, etc happens. (CRUD??)
 
-CREATE
-onclick to create a new keg from form {_done_}
+Start by setting up front end ...
 
-READ - Details
-onclick toggle details {_done_}
-view # of pints left in a keg (full keg ~ 124 pints) {_done_}
-have keg say "OOS" when pintsLeft === 0 {stretch} {_done_}
+- with state(gameStarted: true/false, prompt, choices, turn(?))
+--> React only, no Redux.
 
-UPDATE
-onclick for decrementing quantity(inventory) - (kegs !<= 0) {_done_}
-update keg {stretch} {_done_}
+Things that are repeatable:
 
-DELETE
-onclick to delete a keg (inventory) {stretch} {_done_}
+- Form to make choices
+- Prompts
+- Parallax scroll with repeatable background/images
 
 <div align="center">
 
