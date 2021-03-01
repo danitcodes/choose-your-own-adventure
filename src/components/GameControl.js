@@ -34,42 +34,18 @@ class GameControl extends React.Component {
   //-> reusableForm toggle
   //-> makeChoice() method
   //-> parallaxScroll() method ??
+
 render() {
-  //if else shtuff
+  let buttonText = null;
+  let currentlyVisibleState = null;
+
+  //if else shtuff around buttonTExt and currentlyVisibleState
   return (
-    <div className="screenContainer">
-      <div className="outerBox">
-        <div className="screen">
-          <div className="description">
-            <p>
-              {this.props.prompt}
-            </p>
-          </div>
-          <div className="choiceA">
-            <button onClick={()=>{this.props.choiceA}}>
-              <p>
-                {this.props.choiceA}
-              </p>
-            </button>
-          </div>
-          <div className="choiceB">
-            <button onClick={()=>{this.props.choiceB}}>
-              <p>
-                {this.props.choiceB}
-              </p>
-            </button>
-          </div>
-          <div className="choiceC">
-            <button onClick={()=>{this.props.choiceC}}>
-              <p>
-                {this.props.choiceC}
-              </p>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    )
+    <>
+      {currentlyVisibleState}
+      {/* <button></button> */}
+    </>
+  )
   }
 }
 
