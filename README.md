@@ -118,10 +118,12 @@ onclick to delete a keg (inventory) {stretch} {_done_}
 - JSX
 - React Framework v17.0
 - Redux v4.0.5
+- React-Spring
 - npm
 - node.js
 - `create-react-app`
 - `npm install --save-exact react-scripts@3.2.0`
+- `npm install react-spring`
 <!-- - `npm install redux@4.0.5 react-redux@7.1.3` -->
 - webpack v5.11.1
 - Babel
