@@ -53,11 +53,11 @@ _No known bugs at this time._
 
 ## Description
 
-This is an application for a tap room to track their keg inventory using React/Redux framework.
+This choose-your-own-adventure application walks you through the various choices an Epicodus faces during any given day of class.
 
 ### MVP Objectives
 
-- React.js front-end with a focus on animations & parallax scrolling
+- React.js front-end with a focus on animations & parallax scrolling with React-Spring
 - Hard-code back-end responses (prompts/choices)
 - Stretch goal: refactoring hard-coded responses, etc. with C# as back-end
 - ** Make sure that we systemize how hard coding, etc happens. (CRUD??)
@@ -114,14 +114,12 @@ Things that are repeatable:
 - ES6 JavaScript
 - JSX
 - React Framework v17.0
-- Redux v4.0.5
 - React-Spring
 - npm
 - node.js
 - `create-react-app`
 - `npm install --save-exact react-scripts@3.2.0`
 - `npm install react-spring`
-<!-- - `npm install redux@4.0.5 react-redux@7.1.3` -->
 - webpack v5.11.1
 - Babel
 - ESLint
