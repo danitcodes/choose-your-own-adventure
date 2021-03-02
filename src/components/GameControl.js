@@ -3,6 +3,7 @@ import Screen from './Screen';
 import ReactDOM from 'react-dom';
 import {useSpring} from 'react-spring';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons';
+import Intro from './Intro';
 
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 const Pink = ({ children }) => <span style={{ color: '#FF6AC1' }}>{children}</span>
@@ -11,6 +12,11 @@ const Lightblue = ({ children }) => <span style={{ color: '#9AEDFE' }}>{children
 const Green = ({ children }) => <span style={{ color: '#57EE89' }}>{children}</span>
 const Blue = ({ children }) => <span style={{ color: '#57C7FF' }}>{children}</span>
 const Gray = ({ children }) => <span style={{ color: '#909090' }}>{children}</span>
+
+//Goo Blob
+
+
+
 
 class GameControl extends React.Component {
   constructor(props){
@@ -48,6 +54,7 @@ class GameControl extends React.Component {
   //-> makeChoice() method
   //-> parallaxScroll() method ??
 
+
 render() {
   let buttonText = null;
   let currentlyVisibleState = null;
@@ -61,16 +68,14 @@ render() {
 
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundSize: 'cover' }} />
 
-        <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <h1>Prompt 1?</h1>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-        <h1>Prompt 2?</h1>
+        <ParallaxLayer offset={1.4} speed={0.8} >
+          <button onClick={() => this.parallax.scrollTo(1)}>Feeling ready for the day</button> <br/>
+          <button onClick={() => this.parallax.scrollTo(2)}>NOT Feeling ready for the day</button>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-        <h1>Prompt 3?</h1>
+        <button onClick={() => this.parallax.scrollTo(3)}>Feeling ready for the day</button> <br/>
+          <button onClick={() => this.parallax.scrollTo(4)}>NOT Feeling ready for the day</button>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
@@ -101,9 +106,10 @@ render() {
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          onClick={() => this.parallax.scrollTo(1)}
+
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1>layer</h1>
+          <Intro>TEST THE BLOG</Intro>
+          {/* <h1>This choose-your-own-adventure follows a day in the life of an Epicodus student.</h1> */}
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -111,7 +117,7 @@ render() {
           speed={0.1}
           onClick={() => this.parallax.scrollTo(2)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h1>layer 2</h1>
+          <h1>Billboard Baggins wakes up on a school day. Are they...</h1>
         </ParallaxLayer>
 
         <ParallaxLayer

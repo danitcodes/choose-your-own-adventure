@@ -5,20 +5,34 @@
 //"Start Game" Button
 
 import React from 'react';
-import {useSpring, animated} from 'react-spring';
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import Header from './Header';
+import {animated, useTrail} from 'react-spring';
+import './styles.css';
+import { Button } from 'react-bootstrap';
+
+const fast = { tension: 1200, friction: 40 }
+const slow = { mass: 10, tension: 200, friction: 50 }
+const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
 
 function Intro() {
+  const [trail, set] = useTrail(3, () => ({ xy: [0, 0], config: i => (i === 0 ? fast : slow) }))
+
   return(
     <>
       <Header />
       <p>This choose-your-own-adventure follows the day in the life of an Epicodus student.</p>
-      <Button onClick={goToScreen}></Button>
-      {/* <Parallax pages={3} scrolling={false} horizontal ref={ref => (this.parallax = ref)}>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <span onClick={() => this.parallax.scrollTo(1)}>Layers can contain anything</span>
-        </ParallaxLayer>
-      </Parallax> */}
+        {/* <Button onClick={()=> goToScreen()}></Button> */}
+      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
+          <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
+        </filter>
+      </svg>
+      <div className="hooks-main" onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}>
+        {trail.map((props, index) => (
+          <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
+        ))}
+      </div>
     </>
   )
 }
