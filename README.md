@@ -106,7 +106,7 @@ Things that are repeatable:
 
 ## Stretch Goals
 
-- Implement more CSS/CSS objects
+- Take a user's name to plug into prompts.
 
 ## Technologies Used
 
