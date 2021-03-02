@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { changePath } from './GameControl';
 
 function Screen(props) {
   return(
@@ -14,23 +13,23 @@ function Screen(props) {
               </p>
             </div>
             <div className="choiceA">
-              <button onClick={changePath = ()=>{props.choiceA}}>
+              <button onClick={() => props.changePath(props.choiceA)}>
                 <p>
                   {props.choiceA}
                 </p>
               </button>
             </div>
             <div className="choiceB">
-              <button onClick={changePath = ()=>{props.choiceB}}>
+              <button onClick={() => props.changePath(props.choiceB)}>
                 <p>
                   {props.choiceB}
                 </p>
               </button>
             </div>
             <div className="choiceC">
-              <button onClick={changePath = () =>{props.choiceC}}>
+              <button onClick={() => props.changePath(props.choiceC)}>
                 <p>
-                  {this.props.choiceC}
+                  {props.choiceC}
                 </p>
               </button>
             </div>
