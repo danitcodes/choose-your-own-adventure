@@ -182,8 +182,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-
 ---
+
+#### Additional Resources
+
+- [Building a Create-Your-Own Adventure Game using Rails and React!](https://medium.com/@kiyanadunlock/building-a-create-your-own-adventure-game-using-rails-and-react-fbfeff906787)
+- [Building a “Choose Your Own Adventure”-Style Game Engine in 48 Hours](https://www.viget.com/articles/building-a-choose-your-own-adventure-style-game-engine-in-48-hours/)
 
 <div align="center">
 
