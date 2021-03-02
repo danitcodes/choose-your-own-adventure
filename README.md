@@ -116,6 +116,9 @@ Things that are repeatable:
 - JSX
 - React Framework v17.0
 - React-Spring
+- React-DOM v.17.0.1
+- React Bootstrap v1.5.0
+- @react-spring/addons v.9.0.0-beta.33
 - npm
 - node.js
 - `create-react-app`
@@ -125,7 +128,7 @@ Things that are repeatable:
 - Babel
 - ESLint
 - node.js v15.8.0
-- Bootstrap v5.0.0
+- Bootstrap v4.6.0
 - [Unsplash](unsplash.com)
 
 ---
