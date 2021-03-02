@@ -4,7 +4,7 @@
 
 ## Three-day In-Class Assignment Working with React & Redux for Epicodus, Week 19
 
-### By Garrett Dean Brown & Danielle Thompson
+### By Patrick Osten, Garrett Dean Brown & Danielle Thompson
 
 ### Project began 3.1.21. Last updated 3.4.21.
 
@@ -16,6 +16,7 @@
 
 danithompson74 at gmail.com | [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
 gman9mm at live.com | [LinkedIn](https://www.linkedin.com/in/garrett-brown-d/)
+posten.coding@gmail.com | [LinkedIn](https://www.linkedin.com/in/patrick-osten/)
 
 ### Known Bugs
 
@@ -190,6 +191,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
-Copyright (c) 2021 _*Garrett Dean Brown & Danielle Thompson*_
+Copyright (c) 2021 _*Patrick Osten, Garrett Dean Brown & Danielle Thompson*_
 
 </div>
