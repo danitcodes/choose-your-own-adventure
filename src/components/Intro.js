@@ -9,6 +9,7 @@ import Header from "./Header";
 import { animated, useTrail } from "react-spring";
 import "./styles.css";
 import { Button } from "react-bootstrap";
+import epicodus from "./img/epicodus-logo-300.png";
 
 const fast = { tension: 1200, friction: 40 };
 const slow = { mass: 10, tension: 200, friction: 50 };
@@ -44,6 +45,7 @@ function Intro() {
           />
         ))}
       </div>
+      <img src={epicodus} alt="Epicodus Logo"/>
     </>
   );
 }

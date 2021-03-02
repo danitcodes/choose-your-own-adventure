@@ -6,7 +6,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: gray;
+  background-color: #404040;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   position: absolute;
   will-change: transform;
   border-radius: 50%;
-  background: blue;
+  background: #04BFBF;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   opacity: 0.6;
 }
