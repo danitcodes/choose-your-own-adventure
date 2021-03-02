@@ -109,7 +109,6 @@ render() {
 
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Intro>TEST THE BLOG</Intro>
-          {/* <h1>This choose-your-own-adventure follows a day in the life of an Epicodus student.</h1> */}
         </ParallaxLayer>
 
         <ParallaxLayer

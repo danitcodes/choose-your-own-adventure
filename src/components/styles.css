@@ -29,7 +29,7 @@ body {
   position: absolute;
   will-change: transform;
   border-radius: 50%;
-  background: lightcoral;
+  background: blue;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   opacity: 0.6;
 }
@@ -57,7 +57,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(157, 34, 157, 0.8);
 }
 
 .hooks-main > div:nth-child(2)::after {

@@ -20,9 +20,9 @@ function Intro() {
   return(
     <>
       <Header />
-      <p>This choose-your-own-adventure follows the day in the life of an Epicodus student.</p>
+      <p style={{zIndex: 2}}>This choose-your-own-adventure follows the day in the life of an Epicodus student.</p>
         {/* <Button onClick={()=> goToScreen()}></Button> */}
-      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+      <svg style={{ position: 'absolute', width: 0, height: 0, zIndex: 1}}>
         <filter id="goo">
           <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
           <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
