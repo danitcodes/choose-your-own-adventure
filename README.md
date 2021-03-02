@@ -58,15 +58,16 @@ This choose-your-own-adventure application walks you through the various choices
 
 ### MVP Objectives
 
+- #ILoveBlob #BlobLife.
+
 - React.js front-end with a focus on animations & parallax scrolling with React-Spring
 - Hard-code back-end responses (prompts/choices)
 - Stretch goal: refactoring hard-coded responses, etc. with C# as back-end
-- ** Make sure that we systemize how hard coding, etc happens. (CRUD??)
-
-Start by setting up front end ...
+- Make sure that we systemize how hard coding, etc happens. (CRUD??)
+  Start by setting up front end ...
 
 - with state(gameStarted: true/false, prompt, choices, turn(?))
---> React only, no Redux.
+  --> React only, no Redux.
 
 Things that are repeatable:
 
@@ -200,4 +201,4 @@ This software is licensed under the [MIT License](https://choosealicense.com/lic
 
 Copyright (c) 2021 _*Patrick Osten, Garrett Dean Brown & Danielle Thompson*_
 
-</div>
+</div></div>
