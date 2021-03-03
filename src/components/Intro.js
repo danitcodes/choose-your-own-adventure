@@ -45,7 +45,7 @@ function Intro() {
           />
         ))}
       </div>
-      <img src={epicodus} alt="Epicodus Logo"/>
+      <img style={{zIndex: 1}} src={epicodus} alt="Epicodus Logo"/>
     </>
   );
 }
