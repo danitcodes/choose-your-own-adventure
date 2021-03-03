@@ -14,9 +14,11 @@
 
 ### Get in Touch
 
-danithompson74 at gmail.com | [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)
-gman9mm at live.com | [LinkedIn](https://www.linkedin.com/in/garrett-brown-d/)
-posten.coding@gmail.com | [LinkedIn](https://www.linkedin.com/in/patrick-osten/)
+| Name   | Contact Info                                                                                                                                            |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| danithompson74 at gmail.com   | [LinkedIn](https://www.linkedin.com/in/danielle-thompson74/)   |
+| gman9mm at live.com   | [LinkedIn](https://www.linkedin.com/in/garrett-brown-d/)  |
+| posten.coding at gmail.com   | [LinkedIn](https://www.linkedin.com/in/patrick-osten/)  |
 
 ### Known Bugs
 
@@ -75,13 +77,9 @@ Things that are repeatable:
 - Prompts
 - Parallax scroll with repeatable background/images
 
-<div align="center">
+### Shortened Storyline
 
-## Component Diagram
-
-![Tap Room File Tree](TODO)
-
-</div>
+Splash Page & Intro --> Billboard wakes up --> feeling ready for the day (sunrise png) --> starts coding but bugs (bugs) --> ask Shawn (Shawn avatar) --> you are the magic (magic images) --> keep trying to solve the problem (laptop) --> oops its whiteboarding (end day)
 
 ---
 
