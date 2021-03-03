@@ -161,12 +161,7 @@ class GameControl extends React.Component {
               display: "flex-end",
               alignItems: "right",
             }}
-          >
-            <div>
-              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} onClick={() => this.parallax.scrollTo(2)}>
-            Google the issue and look up some YouTube tutorials!
-          </button>
-            </div>
+            >
           </ParallaxLayer>
         <ParallaxLayer
           offset={1.5}
@@ -176,6 +171,11 @@ class GameControl extends React.Component {
             alignItems: "left",
           }}
         >
+          <div>
+            <button style={{height: '100px', width: '100px', borderRadius: '50%'}} onClick={() => this.parallax.scrollTo(2)}>
+          Google the issue and look up some YouTube tutorials!
+        </button>
+          </div>
           <img style={{height: '200px', width: 'auto', borderRadius: "50%", marginLeft: '75%'}} src={Sunrise} alt="A cartoon rooster crowing at the sunrise"></img>
         </ParallaxLayer>
         <ParallaxLayer
@@ -308,7 +308,7 @@ class GameControl extends React.Component {
           }}
         >
           <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
-            <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(3.2)}>
+            <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(4)}>
               You keep trying to solve the problem!
             </button>{" "}
           </div>
@@ -345,6 +345,7 @@ class GameControl extends React.Component {
             zIndex: '0'
           }}
         >
+          <Script style={{zIndex: "auto"}}/>
           <img style={{zIndex: '0', height: '200px', width: 'auto', borderRadius: "70%", marginLeft: '15%'}} src={GoBackToBed} alt="A cartoon of a young girl sleeping on a whale floating through space"></img>
         </ParallaxLayer>
         <ParallaxLayer
@@ -357,13 +358,14 @@ class GameControl extends React.Component {
             justifyContent: "center",
           }}
         >
+
           <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
             <button style={{backgroundColor: 'rgba(157, 34, 157, 0.8)', height: '100px', width: '100px', borderRadius: '50%', marginBottom: '100px'}} id="btn" onClick={() => this.parallax.scrollTo(1.0)}>
               Start the day over!
             </button>{" "}
           </div>
-          <Script style={{zIndex: -1}}/>
         </ParallaxLayer>
+
         </Parallax>
       </>
     );
