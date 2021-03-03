@@ -11,26 +11,7 @@ const url = (name, wrap = false) =>
   }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
     wrap ? ")" : ""
   }`;
-const Pink = ({ children }) => (
-  <span style={{ color: "#FF6AC1" }}>{children}</span>
-);
-const Yellow = ({ children }) => (
-  <span style={{ color: "#EFF59B" }}>{children}</span>
-);
-const Lightblue = ({ children }) => (
-  <span style={{ color: "#9AEDFE" }}>{children}</span>
-);
-const Green = ({ children }) => (
-  <span style={{ color: "#57EE89" }}>{children}</span>
-);
-const Blue = ({ children }) => (
-  <span style={{ color: "#57C7FF" }}>{children}</span>
-);
-const Gray = ({ children }) => (
-  <span style={{ color: "#909090" }}>{children}</span>
-);
 
-//Goo Blob
 
 class GameControl extends React.Component {
   constructor(props) {
@@ -76,7 +57,29 @@ class GameControl extends React.Component {
 
     return (
       <>
-        <Parallax ref={(ref) => (this.parallax = ref)} pages={5}>
+      <div style={{backgroundColor: '#04BFBF'}}>
+        <div className="intro"></div>
+        <button style={{height: '50px', borderRadius: '80%'}} onClick={this.goToScreen}>Go to start</button>
+        <p></p>
+      </div>
+
+      <Parallax ref={(ref) => (this.parallax = ref)} pages={5}>
+
+        <ParallaxLayer
+            offset={0}
+            speed={0}
+            factor={5}
+            style={{
+              backgroundImage: url("stars", true),
+              backgroundSize: "cover",
+            }}
+          />
+          {/**Parallax scroll stars, non-twinkling */}
+          <ParallaxLayer>
+            {/* first panel stars */}
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+          </ParallaxLayer>
           <ParallaxLayer
             offset={1}
             speed={1}
@@ -86,7 +89,7 @@ class GameControl extends React.Component {
           <ParallaxLayer
             offset={1}
             speed={0.1}
-            onClick={() => this.parallax.scrollTo(2)}
+
             style={{
               display: "flex",
               alignItems: "center",
@@ -94,67 +97,98 @@ class GameControl extends React.Component {
             }}
           >
             <h1>Billboard Baggins wakes up on a school day. Are they...</h1>
+            <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(2)}>
+                Feeling ready for the day
+              </button>{" "}
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(3)}>
+                NOT Feeling ready for the day
+              </button>
+            </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.4} speed={0.8}>
-            <button id="btn" onClick={() => this.parallax.scrollTo(2)}>
-              Feeling ready for the day
-            </button>{" "}
-            <br />
-            <button id="btn" onClick={console.log("click")}>
-              NOT Feeling ready for the day
-            </button>
-          </ParallaxLayer>
+
           {/* {second prompt} */}
-          <ParallaxLayer offset={2.6} speed={1.5} style={{ opacity: 1 }}>
-            {" "}
-            <br />
-            <button onClick={() => this.parallax.scrollTo(4)}>
-              Begrudgingly get up and go find caffeine.
-            </button>
-            <button onClick={() => this.parallax.scrollTo(4)}>
-              Hit Snooze and go back to bed.
-            </button>
-          </ParallaxLayer>
           <ParallaxLayer
             offset={2}
-            speed={1}
-            style={{ backgroundColor: "#87BCDE" }}
-          />
-
-          {/**Parallax scroll stars, non-twinkling */}
-          <ParallaxLayer
-            offset={0}
-            speed={0}
-            factor={3}
-            style={{
-              backgroundImage: url("stars", true),
-              backgroundSize: "cover",
-            }}
-          />
-          <ParallaxLayer
-          offset={1}
-          speed={0}
-          factor={3}>
-
-          </ParallaxLayer>
-          <ParallaxLayer>
-            {/* first panel stars */}
-            <div class="stars"></div>
-            <div class="twinkling"></div>
-          </ParallaxLayer>
-          
-          <ParallaxLayer
-            offset={2.5}
-            speed={-0.4}
+            speed={-0}
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              pointerEvents: "none",
             }}
           >
-            <h1>Prompt 7?</h1>
+            <h1>Billboard Baggins is ready for the day! They start coding and hit a Major Bug, what do you do?</h1>
           </ParallaxLayer>
+          <ParallaxLayer offset={3} speed={1.5} style={{ opacity: 1 }}>
+            {" "}
+            <br />
+            <button style={{height: '100px', width: '100px', borderRadius: '50%'}} onClick={() => this.parallax.scrollTo(4)}>
+              Begrudgingly get up and go find caffeine.
+            </button>
+            <button style={{height: '100px', width: '100px', borderRadius: '50%'}} onClick={() => this.parallax.scrollTo(5)}>
+              Hit Snooze and go back to bed.
+            </button>
+          </ParallaxLayer>
+
+          {/* {third prompt} */}
+          <ParallaxLayer
+            offset={4}
+            speed={0.1}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(6)}>
+                It is a Coffee Day.
+              </button>{" "}
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(7)}>
+                It is a Tea Day.
+              </button>
+            </div>
+          </ParallaxLayer>
+          {/* {fourth prompt} */}
+          <ParallaxLayer
+            offset={5}
+            speed={0.1}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(8)}>
+                I feel rested now.
+              </button>{" "}
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(9)}>
+                I'm still in bed...
+              </button>
+            </div>
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={3}
+            speed={0.1}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h1>Billboard Baggins hits snooze for another 15 minutes and gets to stand up two minutes before 8:30am. Are they...</h1>
+            <div style={{ justifyContent: 'space-between',textAlign: 'center', position: 'relative'}}>
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(2)}>
+                Feeling rested now
+              </button>{" "}
+              <button style={{height: '100px', width: '100px', borderRadius: '50%'}} id="btn" onClick={() => this.parallax.scrollTo(3)}>
+                NOT Feeling rested
+              </button>
+            </div>
+          </ParallaxLayer>
+
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -166,44 +200,8 @@ class GameControl extends React.Component {
           >
             <Intro></Intro>
           </ParallaxLayer>
-          
-          <ParallaxLayer
-            offset={2}
-            speed={-0}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-            onClick={() => this.parallax.scrollTo(0)}
-          >
-            <h1>We all have those days... What will Billboard do to wake himself up?</h1>
-          </ParallaxLayer>
-          <ParallaxLayer
-            offset={3}
-            speed={-0.3}
-            style={{
-              backgroundSize: "80%",
-              backgroundPosition: "center",
-            }}
-          ></ParallaxLayer>
-        </Parallax>
 
-        {this.state.gameStarted ? (
-          <Screen
-            prompt={this.state.prompt}
-            choiceA={this.state.choiceA}
-            choiceB={this.state.choiceB}
-            choiceC={this.state.choiceC}
-            changePath={this.changePath}
-          />
-        ) : (
-          <div>
-            <div className="intro"></div>
-            <button onClick={this.goToScreen}>Go to start</button>
-            <p></p>
-          </div>
-        )}
+        </Parallax>
       </>
     );
   }
