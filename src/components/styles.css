@@ -180,22 +180,3 @@ a:visited {
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
 }
-
-/* Pull */
-/*
-#root > div {
-  width: 100px;
-  height: 100px;
-  background: hotpink;
-  border-radius: 50%;
-  cursor: -webkit-grab;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  white-space: pre;
-}
-
-#root > div:active {
-  cursor: -webkit-grabbing;
-} */
