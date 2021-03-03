@@ -113,7 +113,7 @@ Splash Page & Intro --> Billboard wakes up --> feeling ready for the day (sunris
 - ES6 JavaScript
 - JSX
 - React Framework v17.0
-- React-Spring
+- React-Spring v8.0
 - React-DOM v.17.0.1
 - React Bootstrap v1.5.0
 - @react-spring/addons v.9.0.0-beta.33
