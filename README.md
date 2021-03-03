@@ -24,20 +24,18 @@
 
 _No known bugs at this time._
 
-[Report bugs here.](https://github.com/dani-t-codes/tap-room-redux/issues) | [Request features here.](https://github.com/dani-t-codes/tap-room-redux/issues)
+[Report bugs here.](https://github.com/dani-t-codes/choose-your-own-adventure/issues) | [Request features here.](https://github.com/dani-t-codes/choose-your-own-adventure/issues)
 
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
 - [Description](#description)
-  - [Objectives](#objectives)
-- [Component Diagram](#component-diagram)
+  - [MVP Objectives](#mvp-objectives)
+  - [Shortened Storyline](#shortened-storyline)
 - [User Stories](#user-stories)
-- [Wireframe](#wireframe)
+- [Story Board Flow Charts](#story-board-flow-charts)
 - [Stretch Goals](#stretch-goals)
 - [Technologies Used](#technologies-used)
   - [Setup/Installation Requirements](#setupinstallation-requirements)
@@ -50,7 +48,8 @@ _No known bugs at this time._
       - [`npm test`](#npm-test)
       - [`npm run build`](#npm-run-build)
       - [`npm run eject`](#npm-run-eject)
-    - [Legal, or License](#legal-or-license)
+  - [Additional Resources](#additional-resources)
+  - [Legal, or License](#legal-or-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -118,6 +117,7 @@ Splash Page & Intro --> Billboard wakes up --> feeling ready for the day (sunris
 - React-DOM v.17.0.1
 - React Bootstrap v1.5.0
 - @react-spring/addons v.9.0.0-beta.33
+- react-use-gesture
 - npm
 - node.js
 - `create-react-app`
