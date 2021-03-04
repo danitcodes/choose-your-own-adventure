@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import Trail from './Trail';
 import './TrailStyles.css'
+import Move from "./Move";
 
 function Header() {
   const [open, set] = useState(true);
   return (
     <>
       <div className="container" style={{zIndex: 3, textAlign: 'left'}}>
-        {/* <h1 style={{ zIndex: 3, color: "white", fontSize: "60px", letterSpacing: '10px', textTransform: 'uppercase', textShadow: '4px 4px gray' }}>
-          A Day in the Life
-        </h1> */}
-        <h2 style={{ zIndex: 2, color: "white"}}>
-          Experience an Epicodus student's typical day.
-        </h2>
+        {/* <Move></Move> */}
         <p style={{
           zIndex: 2,
           color: "white",
@@ -22,15 +18,25 @@ function Header() {
           letterSpacing: '1px'
           }}>
           Animations:
-          <br/> pull the pink button,
-          <br/> click the header,
-          <br/> and move the blob.
+          <br/> <span style={{letterSpacing: '10px', fontWeight: 'bolder'}}>pull</span> the pink button,
+          <br/> <span style={{fontWeight: 'bolder', textShadow: '3px 3px gray' }}>click</span>  the header,
+          <br/> and <span style={{fontWeight: 'bolder', fontStyle: 'normal', textShadow: '1px 1px blue'}}>move</span> the blob.
         </p>
-        <p style={{ zIndex: 3, color: "white", paddingTop: '10px', letterSpacing: '5px', textShadow: '1px 1px gray'}}>#BlobForLife #ILoveBlob</p>
+        <h2 style={{ zIndex: 2, color: "white", letterSpacing: '2px'}}>
+          Experience an Epicodus student's typical day.
+        </h2>
+        <p style={{
+          zIndex: 3,
+          color: "white",
+          paddingTop: '10px',
+          letterSpacing: '5px',
+          textShadow: '1px 1px gray',
+          textAlign: 'center'
+          }}>
+            #BlobForLife #ILoveBlob</p>
         <Trail open={open} onClick={() => set((state) => !state)}>
           <span>Day</span>
-          <span>In</span>
-          <span>The</span>
+          <span>In The</span>
           <span>Life</span>
         </Trail>
       </div>
