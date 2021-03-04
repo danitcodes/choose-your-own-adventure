@@ -1,7 +1,5 @@
-import { render } from 'react-dom';
 import React from 'react';
 import Pug from './img/pug-horse.jpg';
-import Shawn from './img/shawn.png'
 import { useSpring, animated } from 'react-spring';
 import './ScriptStyles.css'
 
@@ -16,6 +14,6 @@ export default function Script() {
     },
   })
   return <animated.div className="script-box" style={props} >
-    <img id="pug" src={Pug}></img>
+    <img id="pug" src={Pug} alt="A pug riding a toy horse upright wearing a tiny cowboy hat"></img>
   </animated.div>
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Trail from './Trail';
 import './TrailStyles.css'
-import Move from "./Move";
+// import Move from "./Move";
 
 function Header() {
   const [open, set] = useState(true);
