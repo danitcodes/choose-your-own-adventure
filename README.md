@@ -136,9 +136,10 @@ Splash Page & Intro --> Billboard wakes up --> feeling ready for the day (sunris
 
 ### Setup/Installation Requirements
 
-- To access the live page visit ... TODO
+To access the live page visit [this site](https://choose-your-own-adventure.vercel.app/).
 
-#### Running the Project Locally
+<summary> Running the Project Locally </summary>
+  <details>
 
 ###### For Mac Users
 
@@ -188,6 +189,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 ###### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+</details>
 
 ---
 
