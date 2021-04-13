@@ -55,7 +55,7 @@ _No known bugs at this time._
 
 ## Description
 
-This choose-your-own-adventure application walks you through the various choices an Epicodus faces during any given day of class.
+This application walks you through the various choices an Epicodus faces during any given day of class.
 
 ### MVP Objectives
 
